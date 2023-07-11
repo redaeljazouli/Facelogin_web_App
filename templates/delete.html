@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Supprimer un utilisateur</h1>
+    <ul>
+    {% for user in users %}
+        <li>
+            {{ user.username }} - <a href="{{ url_for('delete_user', username=user.username) }}">Supprimer</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

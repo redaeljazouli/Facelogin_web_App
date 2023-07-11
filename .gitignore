@@ -1,0 +1,15 @@
+# Ignorez l'environnement virtuel Python
+myenv/
+
+# Ignorez les fichiers CSS spécifiques
+static/style3.css
+static/styles.css
+
+# Ignorez certains fichiers HTML
+templates/index.html
+templates/layout.html
+templates/login.html
+templates/register.html
+
+# Ignorez d'autres fichiers/dossiers spécifiques si nécessaire
+static/face/

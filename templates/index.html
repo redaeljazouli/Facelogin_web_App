@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+index
+{% endblock %}
+
+{% block main %}
+<style>
+    body {
+        background-image: url({{ url_for('static', filename='index_back.jpg') }});
+        background-size: cover; /* Pour couvrir tout l'écran */
+    }
+</style>
+<body> 
+    <img src="{{ url_for('static', filename='pprime.jpg') }}" alt="Logo" class="logo" style="width: 200px;">
+
+ <h1>Pprim vous souhaite la bien venue</h1>
+ <br>
+ <p style="color :rgb(42, 165, 116); font-weight: bold;">Vous avez accede a cette page a : {{ current_time }}</p>
+</body>
+
+</html>
+{%endblock%}
